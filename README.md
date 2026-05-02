@@ -1,89 +1,112 @@
-<<<<<<< HEAD
-A mini hardware validation lab simulating real-world system integration, automated testing, and debugging workflows used in hardware validation environments.
+# Hardware Validation Automation Lab
 
-🚀 Overview
+End-to-end hardware validation system simulating real-world lab workflows, including fault injection, sensor validation, and automated test reporting.
 
-This project demonstrates a complete validation flow for an embedded system, combining hardware interaction, automation, and test validation.
+---
 
-The system simulates a real-world validation lab used in R&D and production environments.
+## 🚀 Overview
 
-🏗️ System Architecture
+This project demonstrates a complete validation flow for an embedded system, combining:
 
-PC (Python GUI)
-↓
-Serial Communication
-↓
-Arduino (Embedded Device)
-↓
-Sensor (Temperature – DHT)
+- Hardware ↔ Software integration  
+- Automated test execution  
+- Real-time system monitoring  
+- Fault injection and robustness testing  
 
-🔧 Features
-GUI-based control for system interaction
-Automated test execution (Run All Tests)
-Real-time logging of system behavior
-PASS / FAIL validation for each test
-Communication testing via Serial protocol
-Hardware control (LED ON/OFF)
-Real sensor integration (temperature)
-JSON-based test reporting
-🧪 Test Scenarios
-Ping test (device responsiveness)
-Command validation (LED ON/OFF)
-Sensor validation (temperature reading)
-Range validation (temperature thresholds)
-Error handling (invalid commands)
-🛠️ Technologies Used
-Python (GUI + Automation)
-Tkinter (GUI framework)
-Arduino (Embedded system)
-Serial Communication
-DHT Sensor (Temperature)
-JSON (Reporting)
+The system mimics validation environments used in R&D and production labs.
 
-## GUI Example
+---
+
+## 🏗️ System Architecture
+[ PC GUI ]
+     │
+     ▼
+[ Serial Communication ]
+     │
+     ▼
+[ Arduino Device ]
+     │
+     ▼
+[ Temperature Sensor ]
+---
+
+## 🔧 Key Features
+
+- GUI-based system control (Python + Tkinter)
+- Automated test execution (Run All Tests)
+- Real-time logging and monitoring
+- PASS / FAIL validation framework
+- Serial communication protocol testing
+- Hardware control (LED ON/OFF)
+- Sensor integration (temperature)
+- JSON-based reporting
+- Fault Injection testing (critical for validation systems)
+
+---
+
+## 🧪 Test Coverage
+
+### Functional Tests
+- Ping Test (device responsiveness)
+- LED ON/OFF command validation
+- Sensor data validation (temperature)
+
+### Validation Tests
+- Temperature range validation
+- Communication protocol validation
+
+### Fault Injection Tests
+- Invalid sensor values (e.g. `TEMP:999`)
+- Corrupted messages (e.g. `T#MP:2@.4`)
+- Invalid command handling
+
+---
+
+## 🧠 Why This Project Matters
+
+This project simulates real-world responsibilities of a **Validation / Integration Engineer**:
+
+- System-level validation  
+- Debugging HW/SW interactions  
+- Failure analysis and root cause detection  
+- Building automated validation tools  
+- Testing system robustness under faults  
+
+---
+
+## 🛠️ Technologies Used
+
+- Python (Automation + GUI)
+- Tkinter (GUI framework)
+- Arduino (Embedded system)
+- Serial Communication (UART)
+- DHT Sensor (Temperature)
+- JSON (Reporting)
+
+---
+
+## 🖥️ GUI Example
+
 ![GUI](gui.png)
-=======
-A mini hardware validation lab simulating real-world system integration, automated testing, and debugging workflows used in hardware validation environments.
 
-🚀 Overview
+---
 
-This project demonstrates a complete validation flow for an embedded system, combining hardware interaction, automation, and test validation.
+## ▶️ How to Run
 
-The system simulates a real-world validation lab used in R&D and production environments.
+1. Connect Arduino via USB  
+2. Upload Arduino firmware  
+3. Run:
 
-🏗️ System Architecture
+```bash
+python main.py
+```
+4. Select COM port  
+5. Click **Run Tests**
 
-PC (Python GUI)
-↓
-Serial Communication
-↓
-Arduino (Embedded Device)
-↓
-Sensor (Temperature – DHT)
+---
 
-🔧 Features
-GUI-based control for system interaction
-Automated test execution (Run All Tests)
-Real-time logging of system behavior
-PASS / FAIL validation for each test
-Communication testing via Serial protocol
-Hardware control (LED ON/OFF)
-Real sensor integration (temperature)
-JSON-based test reporting
-🧪 Test Scenarios
-Ping test (device responsiveness)
-Command validation (LED ON/OFF)
-Sensor validation (temperature reading)
-Range validation (temperature thresholds)
-Error handling (invalid commands)
-🛠️ Technologies Used
-Python (GUI + Automation)
-Tkinter (GUI framework)
-Arduino (Embedded system)
-Serial Communication
-DHT Sensor (Temperature)
-JSON (Reporting)
+## 📊 Example Output
 
-## GUI Example
-![GUI](gui.png)
->>>>>>> 2bd0966742f02594eb1900e5065460d86b24e61f
+- PASS / FAIL per test  
+- Real-time logs  
+- JSON test report generated  
