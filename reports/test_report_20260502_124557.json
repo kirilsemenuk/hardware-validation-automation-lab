@@ -1,0 +1,51 @@
+{
+    "project": "Hardware Validation Automation Lab",
+    "timestamp": "2026-05-02T12:45:57",
+    "total_tests": 6,
+    "passed": 6,
+    "failed": 0,
+    "results": [
+        {
+            "name": "Ping Test",
+            "command": "PING",
+            "expected": "PONG",
+            "actual": "PONG",
+            "result": "PASS"
+        },
+        {
+            "name": "Simulated Device Test",
+            "command": "PING_B",
+            "expected": "B_OK",
+            "actual": "B_OK",
+            "result": "PASS"
+        },
+        {
+            "name": "LED ON Test",
+            "command": "LED_ON_B",
+            "expected": "OK",
+            "actual": "OK",
+            "result": "PASS"
+        },
+        {
+            "name": "LED OFF Test",
+            "command": "LED_OFF_B",
+            "expected": "OK",
+            "actual": "OK",
+            "result": "PASS"
+        },
+        {
+            "name": "Temperature Range Test",
+            "command": "GET_TEMP",
+            "expected": "TEMP between 20 and 35",
+            "actual": "TEMP:25.8",
+            "result": "PASS"
+        },
+        {
+            "name": "Invalid Command Test",
+            "command": "HELLO",
+            "expected": "ERROR",
+            "actual": "ERROR",
+            "result": "PASS"
+        }
+    ]
+}

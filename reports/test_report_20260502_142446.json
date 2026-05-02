@@ -1,0 +1,58 @@
+{
+    "project": "Hardware Validation Automation Lab",
+    "timestamp": "2026-05-02T14:24:46",
+    "total_tests": 7,
+    "passed": 7,
+    "failed": 0,
+    "results": [
+        {
+            "name": "Ping Test",
+            "command": "PING",
+            "expected": "PONG",
+            "actual": "PONG",
+            "result": "PASS"
+        },
+        {
+            "name": "LED ON Test",
+            "command": "LED_ON_B",
+            "expected": "OK",
+            "actual": "OK",
+            "result": "PASS"
+        },
+        {
+            "name": "LED OFF Test",
+            "command": "LED_OFF_B",
+            "expected": "OK",
+            "actual": "OK",
+            "result": "PASS"
+        },
+        {
+            "name": "Temperature Range Test",
+            "command": "GET_TEMP",
+            "expected": "TEMP between 20 and 35",
+            "actual": "TEMP:26.3",
+            "result": "PASS"
+        },
+        {
+            "name": "Invalid Command Test",
+            "command": "HELLO",
+            "expected": "ERROR",
+            "actual": "ERROR",
+            "result": "PASS"
+        },
+        {
+            "name": "Fault Injection - Invalid Sensor Value",
+            "command": "FAULT_SENSOR",
+            "expected": "Fault detected",
+            "actual": "TEMP:999.0",
+            "result": "PASS"
+        },
+        {
+            "name": "Fault Injection - Corrupted Message",
+            "command": "FAULT_NOISE",
+            "expected": "Corrupted message detected",
+            "actual": "T#MP:2@.4",
+            "result": "PASS"
+        }
+    ]
+}
