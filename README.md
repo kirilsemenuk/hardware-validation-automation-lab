@@ -18,6 +18,7 @@ The system mimics validation environments used in R&D and production labs.
 ---
 
 ## 🏗️ System Architecture
+```
 [ PC GUI ]
      │
      ▼
@@ -28,6 +29,7 @@ The system mimics validation environments used in R&D and production labs.
      │
      ▼
 [ Temperature Sensor ]
+```
 ---
 
 ## 🔧 Key Features
